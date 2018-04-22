@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <!--Show Food-->
+        <ImageView
+            android:id="@+id/imvFood"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--Show Text-->
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <!--Food and Price-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Food-->
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="Food Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Price-->
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textSize="36sp"
+                    android:text="50 THB."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <!--Description-->
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_alignParentBottom="true"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

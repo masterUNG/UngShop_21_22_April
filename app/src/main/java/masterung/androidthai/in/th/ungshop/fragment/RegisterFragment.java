@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import masterung.androidthai.in.th.ungshop.MainActivity;
 import masterung.androidthai.in.th.ungshop.R;
@@ -73,6 +74,17 @@ public class RegisterFragment extends Fragment{
 
                 String result = addUserToServer.get();
                 Log.d("21AprilV1", "Result ==> " + result);
+
+                if (Boolean.parseBoolean(result)) {
+
+                    getActivity().getSupportFragmentManager().popBackStack();
+
+                } else {
+
+                    Toast.makeText(getActivity(), "Cannot Upload Value",
+                            Toast.LENGTH_SHORT).show();
+
+                }
 
 
             } catch (Exception e) {
