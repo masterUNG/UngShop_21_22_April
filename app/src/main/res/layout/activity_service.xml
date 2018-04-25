@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ServiceActivity">
 
+    <!--Content of Fragment-->
+    <FrameLayout
+        android:id="@+id/contentServiceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </android.support.constraint.ConstraintLayout>

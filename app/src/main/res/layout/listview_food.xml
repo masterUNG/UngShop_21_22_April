@@ -17,6 +17,7 @@
 
         <!--Show Text-->
         <RelativeLayout
+            android:background="#50000000"
             android:padding="15dp"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
@@ -29,6 +30,8 @@
 
                 <!--Food-->
                 <TextView
+                    android:textColor="#ffffff"
+                    android:id="@+id/txtFoodName"
                     android:textStyle="bold"
                     android:textSize="24sp"
                     android:text="Food Name"
@@ -37,6 +40,8 @@
 
                 <!--Price-->
                 <TextView
+                    android:textColor="#ffffff"
+                    android:id="@+id/txtPrice"
                     android:layout_alignParentRight="true"
                     android:textStyle="bold"
                     android:textSize="36sp"
@@ -48,6 +53,8 @@
 
             <!--Description-->
             <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/txtDescription"
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:layout_alignParentBottom="true"
